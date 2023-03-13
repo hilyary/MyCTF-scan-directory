@@ -1,0 +1,12 @@
+version: "2"
+
+services:
+
+  myctf_scan-directory:
+    build: .
+    image: hilyary/myctf_scan-directory
+    restart: always
+    ports:
+      - "127.0.0.1:8888:80"
+    environment:
+      - FLAG=myctf{dontai}
